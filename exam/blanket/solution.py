@@ -1,5 +1,6 @@
 import json
 import numpy as np
+from datetime import datetime
 
 
 # parse json to dictionary
@@ -11,8 +12,8 @@ dict = json.loads(dict)
 # convert dictionary into list
 date_list = list(dict.items())
 
-# sort list on first item
-sorted_by_date = sorted(date_list, key=lambda date: date[0])
+# sort list based on first element in tuple
+sorted_by_date = sorted(date_list, key=lambda date: datetime.strptime(date[0], '%d/%m/%Y'))
 
 # put all temperatures in seperate list
 list_with_temps = []

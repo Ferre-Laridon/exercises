@@ -3,7 +3,7 @@ import numpy as np
 
 
 # parse json to dictionary
-with open('dummy.txt', 'r') as txt_file:
+with open('input.txt', 'r') as txt_file:
     lines = txt_file.readlines()
 dict = lines[0]
 dict = json.loads(dict)

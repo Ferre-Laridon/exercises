@@ -1,0 +1,10 @@
+[
+    {
+        "currency": "bitcoin",
+        "history": [ 1, 1, 2, 3, 1000, 55000, 50000, 30000 ]
+    },
+    {
+        "currency": "ucll-coin",
+        "history": [ 1, 1, 1, 1, 1 ]
+    }
+]
